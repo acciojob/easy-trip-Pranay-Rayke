@@ -88,29 +88,11 @@ public class AirportRepository {
         return noOfPeopleBooked*50 + 3000;
     }
 
-//    public String bookATicket(Integer flightId,Integer passengerId)
-//    {
-//        if(Objects.nonNull(flightPassengerHashMap.get(flightId)) &&(flightPassengerHashMap.get(flightId).size()<flightHashMap.get(flightId).getMaxCapacity())){
-//            List<Integer> passengers =  flightPassengerHashMap.get(flightId);
-//            if(passengers.contains(passengerId)){
-//                return "FAILURE";
-//            }
-//            passengers.add(passengerId);
-//            flightPassengerHashMap.put(flightId,passengers);
-//            return "SUCCESS";
-//        }
-//        else if(Objects.isNull(flightPassengerHashMap.get(flightId))){
-//            flightPassengerHashMap.put(flightId,new ArrayList<>());
-//            List<Integer> passengers =  flightPassengerHashMap.get(flightId);
-//            if(passengers.contains(passengerId)){
-//                return "FAILURE";
-//            }
-//            passengers.add(passengerId);
-//            flightPassengerHashMap.put(flightId,passengers);
-//            return "SUCCESS";
-//        }
-//        return "FAILURE";
-//    }
+    public String bookATicket(Integer flightId,Integer passengerId)
+    {
+
+        return "FAILURE";
+    }
 
     public String cancelATicket(Integer flightId,Integer passengerId)
     {
@@ -162,15 +144,11 @@ public class AirportRepository {
         return null;
     }
 
-//    public int calculateRevenueOfAFlight(Integer flightId)
-//    {
-//        int noOfPeopleBooked = flightPassengerHashMap.get(flightId).size();
-//        int variableFare = (noOfPeopleBooked*(noOfPeopleBooked+1))*25;
-//        int fixedFare = 3000*noOfPeopleBooked;
-//        int totalFare = variableFare + fixedFare;
-//
-//        return totalFare;
-//    }
+    public int calculateRevenueOfAFlight(Integer flightId)
+    {
+
+        return 0;
+    }
 
     public String addPassenger(Passenger passenger)
     {
